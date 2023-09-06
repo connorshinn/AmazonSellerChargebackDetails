@@ -1,5 +1,5 @@
 # Amazon Seller Chargeback Details
-This is a tool for Amazon sellers that provides additional information on their recent chargebacks. All data is extracted from an existing API call that is made by Amazon when opening the "Chargeback Claims" page in Seller Central. Most importantly, this tool provides a reason code for each chargeback, which you can lookup at the [following link:](https://midigator.com/chargeback-reason-codes/)
+This is a tool for Amazon sellers that provides additional information on their recent chargebacks. All data is extracted from an existing API call that is made by Amazon when opening the "Chargeback Claims" page in Seller Central. Most importantly, this tool provides a reason code for each chargeback, which you can lookup at the [following link](https://midigator.com/chargeback-reason-codes/)
 
 ## Installation
 
