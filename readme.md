@@ -3,7 +3,7 @@ This is a tool for Amazon sellers that provides additional information on their 
 
 ## Installation
 
-1. Install [Tampermonkey]([https://tampermonkey.net/](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo))
+1. Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 1. Click this link to open the raw version of this script
 1. Copy the entire text of the script
 1. Open Tampermonkey in your browser and click the Add Script tab (icon with a plus symbol)
