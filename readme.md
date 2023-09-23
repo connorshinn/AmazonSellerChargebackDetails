@@ -18,7 +18,7 @@ This is a tool for Amazon sellers that provides additional information on their 
 5. You can click on the "View Chargeback Details" button again to hide the table
 
 ## Important Note
-Amazon only provides the chargeback code itself – this script attempts to match that 2 digit code to a chargeback reason, but it's a bit of an art more than a science. A few things to keep in mind as a result:
+Amazon only provides the chargeback code itself (e.g., 10.4, 53, etc.) – this script attempts to match that 2 digit code to a chargeback reason, but it's a bit of an art more than a science. A few things to keep in mind as a result:
 - If a 2 digit chargeback code is listed but is missing a description / card icon, it is likely because the card used for the purchase was something other than AmEx, Visa, Mastercard, or Discover. You can do a Google search for "chargeback code" + the 2 digit code to try and find additional details for these if desired
 - There are also a number of codes where Amazon only provides the last 2 digits of a 4 digit code. For example, "37" (provided by Amazon) is not a chargeback code, but it likely refers to the "4837" Mastercard chargeback code
 - Please keep these caveats in mind when reviewing your data, as it's possible that some of the chargeback code descriptions may not be matched perfectly
