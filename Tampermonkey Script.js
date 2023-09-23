@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Amazon US Seller Central – View Chargeback Reasons
-// @include        https://sellercentra*.amazon.com/gp/chargebacks*
-// @icon64			https://www.google.com/s2/favicons?sz=256&domain=sellercentral.amazon.com
-// @require       https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-// @require       https://gist.github.com/raw/2625891/waitForKeyElements.js
-// @resource		https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined;
-// @import			url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
-// @font-face 	   {font-family: 'Material Icons'; src: url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined'); }
-//@grant			GM.xmlHttpRequest
-// @grant			GM_addStyle
+// @include      https://sellercentra*.amazon.com/gp/chargebacks*
+// @icon64		 https://www.google.com/s2/favicons?sz=256&domain=sellercentral.amazon.com
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+// @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @resource	 https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined;
+// @import		 url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+// @font-face 	 {font-family: 'Material Icons'; src: url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined'); }
+// @grant		 GM.xmlHttpRequest
+// @grant		 GM_addStyle
 // ==/UserScript==
 addStyleSheet('@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);');
 
@@ -145,9 +145,8 @@ function click() {
                         finalStatus = 'Pending'
                     }
                     $('<td width="100px">').html('<button class="pill ' + chargebackClass + '">' + '<i style="font-size: 1em !important;line-height: 100% !important;" class="material-symbols-outlined">' + icon + '</i> ' + finalStatus + '</button>').appendTo(row);
-                    $("<td>").text(value.filingDate.formattedDate).appendTo(row);
                     $("<td>").text(value.relatedOrders[0].orderDate.formattedDate).appendTo(row);
-
+                    $("<td>").text(value.filingDate.formattedDate).appendTo(row);
                     $("<td>").html('<a href="https://sellercentral.amazon.com/orders-v3/order/' + value.relatedOrders[0].orderId + '" target="_blank">' + value.relatedOrders[0].orderId + '</a></br><div style=font-size:0.8em>' + a + '</div>').appendTo(row);
                     //$("<td>").text( value.relatedOrders[0].orderAmount.amount).appendTo(row);
                     $("<td>").text(Intl.NumberFormat('en-US', {
