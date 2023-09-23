@@ -168,7 +168,7 @@ function click() {
                 $("#explanatory-msg").append(tableContainer);
                 $("#tableContainer").append('<div id="linkCount" style="float: right"><span style="font-size:1.3em; font-weight: bold">' + chargebackCount + '</span> chargebacks</div>')
                 $("#tableContainer").append(table);
-                $("#tableContainer").append('<div id="chargebackLink"><a href="https://midigator.com/chargeback-reason-codes/" target="_blank">Click to view chargeback code details</a></div>')
+                $("#tableContainer").append('<div id="chargebackLink"><a href="https://payzen.io/en-EN/form-payment/payment-method/sepa/table-of-reasons-for-chargeback.html" target="_blank">Click to view chargeback code details</a></div>')
 
 
                 $("tableContainer").css({
