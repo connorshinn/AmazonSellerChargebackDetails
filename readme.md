@@ -13,7 +13,7 @@ This is a tool for Amazon sellers that provides additional information on their 
 2. A blue button labeled "View Chargeback Details" is added below the header
 ![](https://github.com/connorshinn/AmazonSellerChargebackDetails/blob/bd1b29fcec0f23e169476887a12cfa49c65486c7/Chargeback%20Details%20Button.png)
 3. Clicking the button will display a table containing a list of your chargebacks, including a column that contains the chargeback reason
-![](https://github.com/connorshinn/AmazonSellerChargebackDetails/blob/f9a47cb004627ac05fdd55a660b46273cad42489/Chargeback%20Table.png)
+![](https://github.com/connorshinn/AmazonSellerChargebackDetails/blob/73cbe17ea60ff8f5c0d32abf42a04736d3f6bf50/Chargeback%20Table.png)
 4. Search for the chargeback code in the link provided above, and click it to view more details about why the chargeback was filed
 5. You can click on the "View Chargeback Details" button again to hide the table
 6. **Important Note: Amazon only provides the chargeback code itself – this script attempts to match that 2 digit code to a chargeback reason, but it's a bit of an art more than a science. A few things to keep in mind as a result:**
